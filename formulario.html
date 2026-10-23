@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | NOCTURNAL ARCHIVE</title>
+    <link rel="stylesheet" href=".css/formulario.css">
+</head>
+<body>
+
+ <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <!-- LOGO COMO IMAGEN -->
+        <a href="index.html" class="contenedor-logo">
+            <img
+                class="logo"
+                src="imagenes/logo.png"
+                alt="Nocturnal Archive"
+            >
+        </a>
+
+        <!-- CHECKBOX DEL MENÚ HAMBURGUESA -->
+        <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-checkbox"
+        >
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <label
+            for="menu-toggle"
+            class="menu-button"
+            aria-label="Abrir o cerrar menú"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="navegacion">
+            <ul class="lista-navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+                <li><a href="extras.html">Archivo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main class="contenido-contacto">
+
+        <div class="galeria-contacto">
+    <img class="imagen-contacto"
+         src="imagenes/contacto.jpg"
+         alt="Estilo visual de NOCTURNAL ARCHIVE">
+</div>
+
+        <section class="seccion-contacto">
+            <h2 class="titulo-contacto">HABLEMOS</h2>
+
+            <p class="texto-contacto">
+                ¿Tienes alguna pregunta sobre nuestra
+                colección? Escríbenos.
+            </p>
+
+            <form class="formulario-contacto">
+
+                <div class="grupo-campo">
+                    <label class="etiqueta-campo" for="nombre">
+                        Nombre:
+                    </label>
+
+                    <input class="campo-texto"
+                           type="text"
+                           id="nombre"
+                           name="nombre"
+                           placeholder="Escribe tu nombre"
+                           required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label class="etiqueta-campo" for="correo">
+                        Correo electrónico:
+                    </label>
+
+                    <input class="campo-texto"
+                           type="email"
+                           id="correo"
+                           name="correo"
+                           placeholder="ejemplo@correo.com"
+                           required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label class="etiqueta-campo" for="mensaje">
+                        Tu mensaje:
+                    </label>
+
+                    <textarea class="campo-texto campo-mensaje"
+                              id="mensaje"
+                              name="mensaje"
+                              rows="6"
+                              placeholder="Escribe tu mensaje"
+                              required></textarea>
+                </div>
+
+                <button class="boton-enviar" type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+        </section>
+
+        <section class="seccion-informacion">
+            <h2 class="titulo-contacto">INFORMACIÓN</h2>
+
+            <p class="texto-contacto">
+                Ubicación: Medellín, Colombia
+            </p>
+
+            <p class="texto-contacto">
+                Horario: lunes a sábado, 9:00 a. m. - 6:00 p. m.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>© 2026 NOCTURNAL ARCHIVE</p>
+        <p>Medellín, Colombia</p>
+    </footer>
+
+</body>
+</html>
