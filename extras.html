@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo | NOCTURNAL ARCHIVE</title>
+    <link rel="stylesheet" href=".css/extras.css">
+</head>
+<body>
+<!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <!-- LOGO COMO IMAGEN -->
+        <a href="index.html" class="contenedor-logo">
+            <img
+                class="logo"
+                src="imagenes/logo.png"
+                alt="Nocturnal Archive"
+            >
+        </a>
+
+        <!-- CHECKBOX DEL MENÚ HAMBURGUESA -->
+        <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-checkbox"
+        >
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <label
+            for="menu-toggle"
+            class="menu-button"
+            aria-label="Abrir o cerrar menú"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- NAVEGACIÓN -->
+        <nav class="navegacion">
+            <ul class="lista-navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+                <li><a href="extras.html">Archivo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="hero">
+            <div class="hero-texto">
+                <p class="etiqueta">NOCTURNAL ARCHIVE / 001</p>
+
+                <h1>EL ARCHIVO<span>.</span></h1>
+
+                <p>
+                    Un espacio para explorar nuestra estética,
+                    conocer los detalles de las prendas y descubrir
+                    lo que existe detrás de NOCTURNAL ARCHIVE.
+                </p>
+
+                <a href="#coleccion" class="boton">EXPLORAR ARCHIVO</a>
+            </div>
+
+            <div class="hero-imagen">
+                <img
+                    src="imagenes/portada.png"
+                    alt="Imagen principal de NOCTURNAL ARCHIVE">
+            </div>
+        </section>
+
+        <!-- ARTÍCULO Y LISTA -->
+        <section class="seccion" id="coleccion">
+            <p class="etiqueta">01 / NUESTRA ESTÉTICA</p>
+            <h2>Más allá de la ropa.</h2>
+
+            <div class="rejilla">
+                <article class="tarjeta">
+                    <h3>Identidad independiente</h3>
+
+                    <p>
+                        Creemos en prendas que expresan una identidad
+                        propia, sin depender de las tendencias del momento.
+                    </p>
+
+                    <p>
+                        Cada diseño busca transmitir algo
+                        <strong>auténtico</strong> y diferente.
+                    </p>
+
+                    <p>
+                        La moda puede ser una forma de expresión
+                        <em>personal y experimental</em>.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Referencias visuales</h3>
+
+                    <p>Estos son algunos elementos que forman parte de nuestro universo:</p>
+
+                    <ul class="lista">
+                        <li>Rap underground</li>
+                        <li>Diseño experimental</li>
+                        <li>Estéticas alternativas</li>
+                        <li>Arte visual</li>
+                        <li>Prendas de edición limitada</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- TABLA -->
+        <section class="seccion">
+            <p class="etiqueta">02 / INFORMACIÓN</p>
+            <h2>Guía de prendas.</h2>
+
+            <p class="descripcion">
+                Consulta una guía básica de las prendas de nuestro catálogo.
+            </p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <tr>
+                        <th>Prenda</th>
+                        <th>Estilo</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+
+                    <tr>
+                        <td>Camiseta</td>
+                        <td>Gráfico</td>
+                        <td>Por confirmar</td>
+                    </tr>
+
+                    <tr>
+                        <td>Buzo</td>
+                        <td>Oversize</td>
+                        <td>Por confirmar</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pantalón</td>
+                        <td>Alternativo</td>
+                        <td>Por confirmar</td>
+                    </tr>
+
+                    <tr>
+                        <td>Calzado</td>
+                        <td>Experimental</td>
+                        <td>Por confirmar</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- AUDIO -->
+        <section class="seccion audio-seccion">
+            <p class="etiqueta">03 / AMBIENTE SONORO</p>
+            <h2>Escucha el ambiente.</h2>
+
+            <p class="descripcion">
+                Acompaña tu recorrido por el archivo con una pieza sonora
+                que combine con la identidad de la marca.
+            </p>
+
+            <div class="reproductor">
+                <div>
+                    <p class="audio-titulo">ARCHIVE SOUND / 001</p>
+                    <p class="audio-subtitulo">Pista de ambiente</p>
+                </div>
+
+                <audio controls preload="metadata">
+                    <source src="audios/Ambiente.mp3" type="audio/mpeg">
+                    Tu navegador no puede reproducir este audio.
+                </audio>
+            </div>
+
+            <p class="nota">
+                
+            </p>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="seccion">
+            <p class="etiqueta">04 / CONTACTO</p>
+            <h2>Cuéntanos tu idea.</h2>
+
+            <p class="descripcion">
+                ¿Tienes una pregunta o una propuesta? Déjanos tus datos.
+            </p>
+
+            <form class="formulario" action="#" method="get">
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Tu nombre"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="correo@ejemplo.com"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="tema">Motivo del mensaje</label>
+
+                    <select id="tema" name="tema">
+                        <option value="consulta">Consulta general</option>
+                        <option value="productos">Información sobre prendas</option>
+                        <option value="colaboracion">Propuesta de colaboración</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="boton">
+                    ENVIAR MENSAJE
+                </button>
+            </form>
+
+            <p class="nota">
+                Este formulario es una demostración visual. Para enviar mensajes
+                de verdad necesitarás conectarlo a un backend o servicio externo.
+            </p>
+        </section>
+
+        <!-- GOOGLE MAPS -->
+        <section class="seccion">
+            <p class="etiqueta">05 / UBICACIÓN</p>
+            <h2>Parque Gaitan, Manrique, Medellin, Colombia.</h2>
+
+            <p class="descripcion">
+                Una referencia geográfica para ubicar la ciudad relacionada
+                con la identidad de la marca.
+            </p>
+
+            <div class="mapa">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.991711786197!2d-75.55111702595568!3d6.26481932611731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442894f146192f%3A0xb611c2cda8ae4471!2sParque%20Gait%C3%A1n%20-%20Manrique%20Oriental!5e0!3m2!1ses-419!2sco!4v1792564009697!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <a href="index.html" class="logo">NOCTURNAL ARCHIVE<span>.</span></a>
+
+        <p>Diseñado para quienes construyen su propia identidad.</p>
+
+        <p class="copyright">
+            © 2026 NOCTURNAL ARCHIVE. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
